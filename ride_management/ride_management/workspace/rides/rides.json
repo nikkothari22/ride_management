@@ -1,0 +1,55 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"VBErjyV7xs\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Rides</span>\",\"col\":12}},{\"id\":\"S5P3NWHmaU\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Ride Booking\",\"col\":3}},{\"id\":\"B5l0k0oSOf\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Vehicle\",\"col\":3}},{\"id\":\"Zdpxf9iEEP\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Driver\",\"col\":3}}]",
+ "creation": "2024-08-19 13:25:03.363139",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "support",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Rides",
+ "links": [],
+ "modified": "2024-08-19 13:27:26.288866",
+ "modified_by": "Administrator",
+ "module": "Ride Management",
+ "name": "Rides",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 28.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Ride Booking",
+   "link_to": "Ride Booking",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "format": "{} Available",
+   "label": "Vehicle",
+   "link_to": "Vehicle",
+   "stats_filter": "[[\"Vehicle\",\"status\",\"=\",\"Available\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Driver",
+   "link_to": "Driver",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Rides"
+}
