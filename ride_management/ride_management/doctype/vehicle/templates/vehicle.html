@@ -1,0 +1,12 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+
+<img src="{{ doc.image }}" alt="{{ doc.name}}" style="border-radius: 12px; max-width: 450px; max-height: 300px;" />
+
+<h1>{{ title |e }}</h1>
+
+<a class="btn btn-primary" href="/book-a-ride/new?vehicle={{ doc.name }}">Book a ride</a>
+{% endblock %}
+
+<!-- this is a sample default web page template -->

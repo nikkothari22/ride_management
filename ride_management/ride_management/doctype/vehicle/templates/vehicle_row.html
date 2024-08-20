@@ -1,0 +1,7 @@
+<div style="padding-bottom: 12px; padding-top: 12px; border-bottom: 1px solid #eee;">
+	<img src="{{ doc.image }}"
+		style="width: 88px; height: 60px; border-radius: 8px; margin-right: 10px; object-fit: cover;"
+		alt="{{ doc.name }}">
+	<a href="/{{ doc.route |e }}">{{ (doc.title or doc.name) |e }}</a>
+</div>
+<!-- this is a sample default list template -->

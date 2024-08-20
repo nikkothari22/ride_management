@@ -8,24 +8,15 @@
  "field_order": [
   "section_break_qczb",
   "vehicle",
-  "driver",
-  "section_break_hvgv",
-  "amended_from"
+  "customer_name",
+  "customer_email",
+  "column_break_evcf",
+  "pickup_address"
  ],
  "fields": [
   {
    "fieldname": "section_break_qczb",
    "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Ride Booking",
-   "print_hide": 1,
-   "read_only": 1,
-   "search_index": 1
   },
   {
    "fieldname": "vehicle",
@@ -37,23 +28,32 @@
    "reqd": 1
   },
   {
-   "fieldname": "driver",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Driver",
-   "options": "Driver",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name",
    "reqd": 1
   },
   {
-   "fieldname": "section_break_hvgv",
-   "fieldtype": "Section Break"
+   "fieldname": "customer_email",
+   "fieldtype": "Data",
+   "label": "Customer Email",
+   "options": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_evcf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pickup_address",
+   "fieldtype": "Small Text",
+   "label": "Pickup Address",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
- "is_submittable": 1,
  "links": [],
- "modified": "2024-08-19 13:22:46.875652",
+ "modified": "2024-08-20 12:05:10.909287",
  "modified_by": "Administrator",
  "module": "Ride Management",
  "name": "Ride Booking",
@@ -70,7 +70,6 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
-   "submit": 1,
    "write": 1
   }
  ],

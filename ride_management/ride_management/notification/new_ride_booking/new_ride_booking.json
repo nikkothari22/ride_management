@@ -1,0 +1,28 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "creation": "2024-08-20 12:57:38.551801",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Ride Booking",
+ "enabled": 1,
+ "event": "New",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "{{ doc.vehicle }} requested from {{ doc.pickup_address }}",
+ "message_type": "Plain Text",
+ "modified": "2024-08-20 12:57:38.551801",
+ "modified_by": "Administrator",
+ "module": "Ride Management",
+ "name": "New Ride Booking",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_role": "System Manager"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "New ride booking from {{ doc.customer_name }}"
+}

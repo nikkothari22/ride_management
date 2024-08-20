@@ -10,6 +10,7 @@
   "first_name",
   "date_of_birth",
   "license_photo",
+  "license_number",
   "full_name",
   "column_break_gyjm",
   "last_name",
@@ -63,12 +64,22 @@
    "label": "Age",
    "non_negative": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "license_number",
+   "fieldtype": "Data",
+   "label": "License Number"
   }
  ],
  "image_field": "photo",
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2024-08-19 13:13:07.777521",
+ "links": [
+  {
+   "link_doctype": "Ride",
+   "link_fieldname": "driver"
+  }
+ ],
+ "modified": "2024-08-20 13:14:14.592016",
  "modified_by": "Administrator",
  "module": "Ride Management",
  "name": "Driver",
@@ -88,6 +99,7 @@
    "write": 1
   }
  ],
+ "search_fields": "license_number",
  "sort_field": "creation",
  "sort_order": "DESC",
  "states": []

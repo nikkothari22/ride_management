@@ -1,0 +1,180 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:RIDE-{#####}",
+ "creation": "2024-08-20 10:49:00.699198",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "ride_booking",
+  "vehicle",
+  "driver",
+  "status",
+  "cost_per_hour",
+  "column_break_hogc",
+  "customer_name",
+  "customer_email",
+  "pickup_address",
+  "section_break_wkma",
+  "ride_stops",
+  "section_break_qnho",
+  "total_hours",
+  "column_break_npcl",
+  "total_cost",
+  "currency",
+  "section_break_zilr",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_zilr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Ride",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fetch_from": "ride_booking.vehicle",
+   "fieldname": "vehicle",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Vehicle",
+   "options": "Vehicle",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "driver",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Driver",
+   "options": "Driver",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Booked\nIn Progress\nCompleted",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_hogc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "ride_booking.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "ride_booking.customer_email",
+   "fieldname": "customer_email",
+   "fieldtype": "Data",
+   "label": "Customer Email",
+   "options": "Email",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "ride_booking.pickup_address",
+   "fieldname": "pickup_address",
+   "fieldtype": "Small Text",
+   "label": "Pickup Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_qnho",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ride_stops",
+   "fieldtype": "Table",
+   "label": "Ride Stops",
+   "options": "Ride Stops",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_wkma",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_hours",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Total Hours",
+   "non_negative": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "cost_per_hour",
+   "fieldtype": "Currency",
+   "label": "Cost Per Hour",
+   "non_negative": 1,
+   "options": "currency"
+  },
+  {
+   "fieldname": "column_break_npcl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_cost",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Cost",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "default": "USD",
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "ride_booking",
+   "fieldtype": "Link",
+   "label": "Ride Booking",
+   "options": "Ride Booking",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-08-20 13:27:55.677585",
+ "modified_by": "Administrator",
+ "module": "Ride Management",
+ "name": "Ride",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
