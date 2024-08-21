@@ -1,0 +1,50 @@
+{
+ "add_total_row": 1,
+ "columns": [
+  {
+   "fieldname": "make",
+   "fieldtype": "Link",
+   "label": "Make",
+   "options": "Vehicle Make",
+   "width": 0
+  },
+  {
+   "fieldname": "count",
+   "fieldtype": "Data",
+   "label": "Number of Vehicles",
+   "width": 0
+  }
+ ],
+ "creation": "2024-08-21 12:32:11.417832",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "mandatory": 1,
+   "options": "Available\nUnavailable\nIn Repair\nSold",
+   "wildcard_filter": 0
+  }
+ ],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letterhead": null,
+ "modified": "2024-08-21 12:37:54.644691",
+ "modified_by": "Administrator",
+ "module": "Ride Management",
+ "name": "Vehicles by Make",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT make, COUNT(*) AS count FROM `tabVehicle` WHERE status = %(status)s GROUP BY make;",
+ "ref_doctype": "Vehicle",
+ "report_name": "Vehicles by Make",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}

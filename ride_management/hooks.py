@@ -21,6 +21,11 @@ app_license = "mit"
 # 	}
 # ]
 
+fixtures = [
+    # export all records from the Vehicle Make table
+    "Vehicle Make"
+]
+
 # Includes in <head>
 # ------------------
 
@@ -57,12 +62,12 @@ app_license = "mit"
 # ----------
 
 # application home page (will override Website Settings)
-# home_page = "login"
+home_page = "vehicles"
 
 # website user home page (by Role)
-# role_home_page = {
-# 	"Role": "home_page"
-# }
+role_home_page = {
+	"System Manager": "app"
+}
 
 # Generators
 # ----------
@@ -139,7 +144,7 @@ app_license = "mit"
 
 # doc_events = {
 # 	"*": {
-# 		"on_update": "method",
+# 		"validate": "method",
 # 		"on_cancel": "method",
 # 		"on_trash": "method"
 # 	}
@@ -148,23 +153,23 @@ app_license = "mit"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"ride_management.tasks.all"
-# 	],
-# 	"daily": [
-# 		"ride_management.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"ride_management.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"ride_management.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"ride_management.tasks.monthly"
-# 	],
-# }
+scheduler_events = {
+	# "all": [
+	# 	"ride_management.tasks.all"
+	# ],
+	# "daily": [
+	# 	"ride_management.scheduler.daily.send_insurance_reminder"
+	# ],
+	# "hourly": [
+	# 	"ride_management.tasks.hourly"
+	# ],
+	# "weekly": [
+	# 	"ride_management.tasks.weekly"
+	# ],
+	# "monthly": [
+	# 	"ride_management.tasks.monthly"
+	# ],
+}
 
 # Testing
 # -------

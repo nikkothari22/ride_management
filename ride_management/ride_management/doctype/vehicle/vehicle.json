@@ -26,9 +26,10 @@
  "fields": [
   {
    "fieldname": "make",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "in_standard_filter": 1,
    "label": "Make",
+   "options": "Vehicle Make",
    "reqd": 1
   },
   {
@@ -119,7 +120,7 @@
    "link_fieldname": "vehicle"
   }
  ],
- "modified": "2024-08-20 13:12:47.988555",
+ "modified": "2024-08-21 12:16:41.243213",
  "modified_by": "Administrator",
  "module": "Ride Management",
  "name": "Vehicle",

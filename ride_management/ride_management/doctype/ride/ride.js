@@ -24,6 +24,18 @@ frappe.ui.form.on("Ride", {
             }
         })
 
+        if (frm.doc.status == "In Progress") {
+            frm.add_custom_button("Complete Ride", () => {
+
+                frappe.call('ride_management.ride_management.doctype.ride.ride.complete_ride', {
+                    ride_id: frm.doc.name
+                }).then(response => {
+                    frm.reload_doc();
+                });
+
+            });
+        }
+
     },
 
     cost_per_hour(frm) {

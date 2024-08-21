@@ -1,0 +1,44 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Vehicle Make",
+  "make": "Volkswagon",
+  "modified": "2024-08-21 12:16:06.082271",
+  "name": "Volkswagon"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Vehicle Make",
+  "make": "Honda",
+  "modified": "2024-08-21 12:16:10.004286",
+  "name": "Honda"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Vehicle Make",
+  "make": "Tata",
+  "modified": "2024-08-21 12:16:13.253839",
+  "name": "Tata"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Vehicle Make",
+  "make": "Mahindra",
+  "modified": "2024-08-21 12:16:16.921178",
+  "name": "Mahindra"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Vehicle Make",
+  "make": "Suzuki",
+  "modified": "2024-08-21 12:16:20.621892",
+  "name": "Suzuki"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Vehicle Make",
+  "make": "Mercedes",
+  "modified": "2024-08-21 12:16:52.827273",
+  "name": "Mercedes"
+ }
+]

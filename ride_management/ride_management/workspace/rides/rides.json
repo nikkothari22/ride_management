@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"VBErjyV7xs\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Rides</span>\",\"col\":12}},{\"id\":\"S5P3NWHmaU\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Ride Booking\",\"col\":3}},{\"id\":\"B5l0k0oSOf\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Vehicle\",\"col\":3}},{\"id\":\"Zdpxf9iEEP\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Driver\",\"col\":3}}]",
+ "content": "[{\"id\":\"VBErjyV7xs\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Rides</span>\",\"col\":12}},{\"id\":\"S5P3NWHmaU\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Ride Booking\",\"col\":3}},{\"id\":\"KMRrIRt8Hg\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Ride\",\"col\":3}},{\"id\":\"B5l0k0oSOf\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Vehicle\",\"col\":3}},{\"id\":\"Zdpxf9iEEP\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Driver\",\"col\":3}}]",
  "creation": "2024-08-19 13:25:03.363139",
  "custom_blocks": [],
  "docstatus": 0,
@@ -13,7 +13,7 @@
  "is_hidden": 0,
  "label": "Rides",
  "links": [],
- "modified": "2024-08-19 13:27:26.288866",
+ "modified": "2024-08-21 10:52:18.074270",
  "modified_by": "Administrator",
  "module": "Ride Management",
  "name": "Rides",
@@ -25,6 +25,14 @@
  "roles": [],
  "sequence_id": 28.0,
  "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Ride",
+   "link_to": "Ride",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
   {
    "color": "Grey",
    "doc_view": "List",
